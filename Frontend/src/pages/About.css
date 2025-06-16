@@ -1,0 +1,18 @@
+
+.about-card {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: rgb(0,132,255);
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+.about-card:hover {
+  background: black; /* blue */
+  color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}

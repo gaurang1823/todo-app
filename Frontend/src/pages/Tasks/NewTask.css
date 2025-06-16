@@ -1,0 +1,335 @@
+/* Todo App Styles */
+
+.todo-container {
+  max-width: 32rem; /* 512px */
+  margin: 2rem auto 0;
+  padding: 1.5rem;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.todo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.todo-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin: 0;
+}
+
+.clear-button {
+  font-size: 0.875rem;
+  color: #ef4444;
+  background: none;
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.clear-button:hover {
+  color: #dc2626;
+}
+
+/* Navigation Buttons */
+.nav-buttons {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.nav-button {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.nav-button.active-new {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.nav-button.active-completed {
+  background-color: #10b981;
+  color: white;
+}
+
+.nav-button.inactive {
+  background-color: #e5e7eb;
+  color: #374151;
+}
+
+.nav-button.inactive:hover {
+  background-color: #d1d5db;
+}
+
+/* Add Todo Section */
+.add-todo-section {
+  margin-bottom: 1.5rem;
+}
+
+.add-todo-form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.todo-input:focus {
+  box-shadow: 0 0 0 2px #3b82f6;
+  border-color: transparent;
+}
+
+.add-button {
+  padding: 0.75rem;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-button:hover {
+  background-color: #2563eb;
+}
+
+/* Todo List */
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.empty-message {
+  text-align: center;
+  color: #6b7280;
+  padding: 2rem 0;
+}
+
+.todo-item {
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid;
+}
+
+.todo-item.completed {
+  background-color: #f0fdf4;
+  border-color: #bbf7d0;
+}
+
+.todo-item.pending {
+  background-color: #eff6ff;
+  border-color: #bfdbfe;
+}
+
+/* Edit Mode */
+.edit-container {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.edit-input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.edit-input:focus {
+  box-shadow: 0 0 0 2px #3b82f6;
+  border-color: transparent;
+}
+
+.save-button {
+  padding: 0.5rem;
+  background-color: #10b981;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.save-button:hover {
+  background-color: #059669;
+}
+
+.cancel-button {
+  padding: 0.5rem;
+  background-color: #6b7280;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cancel-button:hover {
+  background-color: #4b5563;
+}
+
+/* Display Mode */
+.todo-display {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.toggle-button {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  border: 2px solid;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.toggle-button.completed {
+  background-color: #10b981;
+  border-color: #10b981;
+  color: white;
+}
+
+.toggle-button.pending {
+  border-color: #d1d5db;
+}
+
+.toggle-button.pending:hover {
+  border-color: #4ade80;
+}
+
+.todo-text {
+  flex: 1;
+}
+
+.todo-text.completed {
+  text-decoration: line-through;
+  color: #6b7280;
+}
+
+.todo-text.pending {
+  color: #1f2937;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.action-button {
+  padding: 0.25rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  background: none;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edit-action-button {
+  color: #3b82f6;
+}
+
+.edit-action-button:hover {
+  background-color: #dbeafe;
+}
+
+.delete-action-button {
+  color: #ef4444;
+}
+
+.delete-action-button:hover {
+  background-color: #fee2e2;
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+  .todo-container {
+    margin: 1rem;
+    padding: 1rem;
+  }
+  
+  .todo-title {
+    font-size: 1.25rem;
+  }
+  
+  .nav-buttons {
+    flex-direction: column;
+  }
+  
+  .add-todo-form {
+    flex-direction: column;
+  }
+  
+  .todo-display {
+    gap: 0.5rem;
+  }
+  
+  .action-buttons {
+    flex-direction: column;
+  }
+}
+
+/* Focus and Accessibility */
+.todo-input:focus,
+.edit-input:focus {
+  box-shadow: 0 0 0 2px #3b82f6;
+}
+
+.nav-button:focus,
+.add-button:focus,
+.toggle-button:focus,
+.action-button:focus,
+.save-button:focus,
+.cancel-button:focus,
+.clear-button:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* Animation */
+.todo-item {
+  transition: all 0.2s ease-in-out;
+}
+
+.todo-item:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
